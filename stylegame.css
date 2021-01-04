@@ -1,0 +1,180 @@
+.gameScreen{
+    border: 1px solid black;
+    width: 90%;
+    height: 500px;
+    display: none; 
+}
+.gameScreenOn{
+    display: block;
+}
+.gameMenu{
+    display: none;
+    left: 32%;
+    position: relative;
+    
+    width: 20%;
+    top: 100%;
+    padding: 4px 4px;
+    height: 400px;
+    opacity: 80%;
+}
+
+.menuOn{
+    display: block;
+}
+.gameMenu ul li{
+    list-style-type: none;
+    border-radius: 3%;
+    text-align: center;
+    padding: 4px 4px;
+    border: 1px solid black;
+    margin: 20px 3px;
+    cursor: pointer;
+    width: 100%;
+    
+    
+}
+.gameMenu ul{
+    position: relative;
+    top: 30%;
+}
+
+.countDown{
+    position: relative;
+    left: 33.2%;
+    top: 40%;
+    width: 25%;
+    height: 20%;
+}
+.countDown h2{
+    text-align: center;
+    position: relative;
+    top: 35%
+}
+.countDownOff{
+    display: none;
+}
+
+.target{
+    width: 30px;
+    height: 30px;
+    background-image: url("img/targetRed.png");
+    display: none;
+    cursor: pointer;
+}
+#target1{
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+#target2{
+    position: relative;
+    left: 47%;
+    top: 10%;
+}
+#target3{
+    position: relative;
+    left: 85%;
+    top: 10%;
+}
+#target4{
+    position: relative;
+    left: 10%;
+    top: 45%;
+    
+}
+#target5{
+    position: relative;
+    left: 47%;
+    top: 45%;
+    
+}
+#target6{
+    position: relative;
+    left: 85%;
+    top: 45%;
+
+}
+#target7{
+    position: relative;
+    left: 10%;
+    top: 80%;
+    
+}
+#target8{
+    position: relative;
+    left: 47%;
+    top: 80%;
+   
+}
+#target9{
+    position: relative;
+    left: 85%;
+    top: 80%;
+ 
+}
+.trigTarget{
+    background-image: url("img/targetGreen.png");
+    display: block;
+    animation: targetEx 200ms ease-in forwards;
+    
+}
+#scorez{
+    padding: 3% 3%;
+    width: 20%;
+    position: relative;
+    left: 0%;
+    top: 90px;
+}
+.tenScore{
+    position: relative;
+    top: 90%;
+    left: 5%;
+    opacity: 0%;
+}
+.tenScorez{
+    animation: tenScore 900ms linear;
+}
+#return:hover{
+    cursor: pointer;
+}
+.return{
+    width: 70px;
+    position: relative;
+    color: black;
+    cursor: pointer;
+    display: block;
+    top: 0%;
+    left: 38%;
+    border-radius: 3%;
+}
+.offReturn{
+    display: none;
+}
+
+.gameMenu ul li:hover{
+    border: none;
+}
+.descT1{
+    position: relative;
+    font-size: large;
+    left: 31.5%;
+    top: 100px;
+    width: 25%;
+
+}
+
+
+@keyframes tenScore{
+    0%{opacity: 0%;
+        top: 5%;}
+    50%{opacity: 100%;
+        top:0%;}
+    100%{opacity: 0%;
+        top: -5%;}
+}
+@keyframes targetEx{
+    0%{}
+    10%{transform: scale(1.5);}
+    100%{transform: scale(0.01);}
+}
