@@ -1,0 +1,259 @@
+.snowGlobe{
+    position: relative;
+    top: 250px;
+    left: 23%;
+}
+.switch{
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    top: 620px;
+    left: 280px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(126, 126, 126) , rgb(58, 58, 58));
+}
+.desc{
+    position: absolute;
+    top: 320px;
+    left: 370px;
+}
+
+.switch.switchOn{
+    background-image: linear-gradient(to right, rgb(58, 58, 58) , rgb(126, 126, 126));
+}
+
+/* LightBulbs */
+
+.bulb{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #6C63FF;
+    opacity: 90%;
+    
+}
+.bulb1.bulbOn, .bulb3.bulbOn, .bulb5.bulbOn, .bulb7.bulbOn, .bulb9.bulbOn, .bulb11.bulbOn{
+    animation: changeColor 9s linear infinite;
+}
+.bulb2.bulbOn, .bulb4.bulbOn, .bulb6.bulbOn, .bulb8.bulbOn, .bulb10.bulbOn, .bulb12.bulbOn{
+    animation: changeColor 9s 3s linear infinite;
+}
+.bulb1{
+    top: 255px;
+    left: 160px;
+}
+.bulb2{
+    top: 250px;
+    left: 191px;
+}
+.bulb3{
+    top: 250px;
+    left: 220px;
+}
+.bulb4{
+    top: 263px;
+    left: 195px;
+}
+.bulb5{
+    top: 270px;
+    left: 168px;
+}
+.bulb6{
+    top: 275px;
+    left: 130px;
+}
+.bulb7{
+    top: 297px;
+    left: 150px;
+}
+.bulb8{
+    top: 300px;
+    left: 198px;
+}
+.bulb9{
+    top: 290px;
+    left: 236px;
+}
+.bulb10{
+    top: 317px;
+    left: 223px;
+}
+.bulb11{
+    top: 323px;
+    left: 182px;
+}
+.bulb12{
+    top: 323px;
+    left: 139px;
+}
+
+@keyframes changeColor{
+    0%{background-color: #6C63FF;}
+    33%{background-color: rgb(255, 255, 70);}
+    66%{background-color: rgb(109, 255, 51);}
+    100%{background-color: #6C63FF;}
+}
+@keyframes changeColor2{
+    0%{background-color: #6C63FF;}
+    33%{background-color: rgb(109, 255, 51);}
+    66%{background-color: rgb(255, 255, 70);}
+    100%{background-color: #6C63FF;}
+}
+
+/* SnowFlakes */
+
+.snowB.snowOn{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #ffffff;
+    opacity: 90%;
+    
+}
+.snowB1.snowOn{
+    top: 185px;
+    left: 185px;
+    opacity: 0%;
+    animation: snowFall 30s linear infinite;
+}
+.snowB1c.snowOn{
+    top: 185px;
+    left: 185px;
+    opacity: 0%;
+    animation: snowFall 30s 8s linear infinite;
+}
+.snowB2.snowOn{
+    top: 185px;
+    left: 250px;
+    opacity: 0%;
+    animation: snowFall2 30s 5s linear infinite;
+}
+.snowB3.snowOn{
+    top: 185px;
+    left: 320px;
+    opacity: 0%;
+    animation: snowFall3 30s 10s linear infinite;
+}
+.snowB3c.snowOn{
+    top: 185px;
+    left: 320px;
+    opacity: 0%;
+    animation: snowFall3 30s linear infinite;
+}
+.snowB4.snowOn{
+    top: 185px;
+    left: 390px;
+    opacity: 0%;
+    animation: snowFall4 30s 3s linear infinite;
+}
+.snowB4c.snowOn{
+    top: 185px;
+    left: 390px;
+    opacity: 0%;
+    animation: snowFall4 30s 18s linear infinite;
+}
+
+@keyframes snowFall{
+    0%{transform: scale(0.01);
+        opacity: 0%;}
+    20%{transform: scale(0.5);
+        left: 195px;
+        top: 268px;
+        opacity: 50%;}
+    40%{transform: scale(1);
+        left: 180px;
+        top: 351px;
+    }
+    60%{left: 175px;
+        top: 434px;
+        opacity: 90%;
+    }
+    80%{transform: scale(0.5);
+        left: 195px;
+        top: 517px;
+    }
+    100%{transform: scale(0.01);
+        left: 175px;
+        top: 600px;
+        opacity: 0%;
+    }
+}
+@keyframes snowFall2{
+    0%{transform: scale(0.01);
+        opacity: 0%;}
+    20%{transform: scale(0.5);
+        left: 265px;
+        top: 268px;
+        opacity: 50%;}
+    40%{transform: scale(1);
+        left: 245px;
+        top: 351px;
+    }
+    60%{left: 265px;
+        top: 434px;
+        opacity: 90%;
+    }
+    80%{transform: scale(0.5);
+        left: 245px;
+        top: 517px;
+    }
+    100%{transform: scale(0.01);
+        left: 265px;
+        top: 600px;
+        opacity: 0%;
+    }
+}
+@keyframes snowFall3{
+    0%{transform: scale(0.01);
+        opacity: 0%;}
+    20%{transform: scale(0.5);
+        left: 330px;
+        top: 268px;
+        opacity: 50%;}
+    40%{transform: scale(1);
+        left: 310px;
+        top: 351px;
+    }
+    60%{left: 330px;
+        top: 434px;
+        opacity: 90%;
+    }
+    80%{transform: scale(0.5);
+        left: 310px;
+        top: 517px;
+    }
+    100%{transform: scale(0.01);
+        left: 330px;
+        top: 600px;
+        opacity: 0%;
+    }
+}
+@keyframes snowFall4{
+    0%{transform: scale(0.01);
+        opacity: 0%;}
+    20%{transform: scale(0.5);
+        left: 400px;
+        top: 268px;
+        opacity: 50%;}
+    40%{transform: scale(1);
+        left: 380px;
+        top: 351px;
+    }
+    60%{left: 400px;
+        top: 434px;
+        opacity: 90%;
+    }
+    80%{transform: scale(0.5);
+        left: 380px;
+        top: 517px;
+    }
+    100%{transform: scale(0.01);
+        left: 400px;
+        top: 600px;
+        opacity: 0%;
+    }
+}
+
+
